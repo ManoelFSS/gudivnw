@@ -12,6 +12,8 @@ export const Headers = styled.header`
     padding: 0px 40px;
     position: fixed;
     cursor: pointer;
+    user-select: none;
+    outline:none;
 
     h1{
         display: flex;
@@ -55,11 +57,15 @@ export const Headers = styled.header`
         letter-spacing: 2px;
         border-radius: 20px;
     }
+
+    @media(max-width:975px){
+        padding: 0px 20px;
+    }
   
 `;
 
 export const Nav = styled.nav`
-    @media(max-width:930px){
+    @media(max-width:975px){
 
         display:flex ;
         position: absolute;
@@ -68,7 +74,6 @@ export const Nav = styled.nav`
         height: 100vh;
         right: ${props=> props.menuBrirFecha};
         top: 0px;
-        padding-top: 14vh;
         background-color: #ffffff;
         box-shadow: -1px 0px 15px #000000b3;
         border-radius: 20px 0px 0px 15px;
@@ -77,20 +82,26 @@ export const Nav = styled.nav`
  
         ul{
             display: block;
+            margin-top: 14vh;
         }
     }
 `;
 
 export const Div = styled.div`
-    height: 5vh;
-    width: 5vh;
-    right: 10px;
+    display:none;
+    height: 6vh;
+    right: 20px;
     border-radius: 50%;
     z-index: 2;
     position: absolute;
+    user-select: none;
+    outline:none;
 
     img{
         width: 100%;
         height: 100%;
+    }
+    @media(max-width:975px){
+        display: block;
     }
 `;

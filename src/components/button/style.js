@@ -12,6 +12,8 @@ export const Botao = styled.button`
     letter-spacing: 2px;
     cursor: pointer;
     transition:all 0.3s;
+    user-select: none;
+    outline:none;
 
     &:hover{
         background-color:${(props)=> props.btnHover || '#002E6B'};
@@ -24,12 +26,13 @@ export const Botao_blur = styled.button`
     border-radius: 15px;
     border: ${(props)=> props.btnBorder};
     color: ${(props)=> props.color || '#000'};
- 
     font-weight: bold;
     letter-spacing: 2px;
     cursor: pointer;
     transition:all 0.3s;
     padding: 10px 20px;
+    user-select: none;
+    outline:none;
     
 
     &:hover{
@@ -53,6 +56,8 @@ export const Btn = styled.button`
     font-size: clamp(1vw,1.3vw + 2vw,0.5em);
     transition: all 0.3s;
     cursor: pointer;
+    user-select: none;
+    outline:none;
 
     &:hover{
         transform: scale(1.04);
