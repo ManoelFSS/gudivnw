@@ -14,6 +14,8 @@ export const Botao = styled.button`
     transition:all 0.3s;
     user-select: none;
     outline:none;
+    
+ 
 
     &:hover{
         background-color:${(props)=> props.btnHover || '#002E6B'};
@@ -43,9 +45,8 @@ export const Botao_blur = styled.button`
 export const Btn = styled.button`
     padding: 10px 25px;
     border-radius: 20px;
-    color: red;
     position: absolute;
-    z-index: 2;
+
     word-spacing: 5px;
     letter-spacing: 3px;
     border: solid 1px #fff;

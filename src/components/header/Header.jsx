@@ -12,6 +12,7 @@ export default function Header(){
     
 
     return (
+        <>
         <Headers>
             <h1><img src={Logo} alt="logo tipo, gudi o bom da vida é viver !" /></h1>
             <Nav menuBrirFecha={menuBrirFecha}>
@@ -30,9 +31,10 @@ export default function Header(){
                     </li>
                 </ul>
             </Nav>
-            <Div onClick={()=> menuBrirFecha === '0px' ? ` ${setmenuImg(MenuFechado)}  ${setmenuBrirFecha('-210px')} ` :  ` ${setmenuImg(MenuAberto)}  ${setmenuBrirFecha('0px')} ` }>
-                <img src={menuImg} alt="icone menu" />
-            </Div>
         </Headers>
+        <Div onClick={()=> menuBrirFecha === '0px' ? ` ${setmenuImg(MenuFechado)}  ${setmenuBrirFecha('-210px')} ` :  ` ${setmenuImg(MenuAberto)}  ${setmenuBrirFecha('0px')} ` }>
+          <img src={menuImg} alt="icone menu" />
+        </Div>
+       </>
     )
 }

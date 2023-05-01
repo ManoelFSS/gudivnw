@@ -76,6 +76,7 @@ export const Container_area = styled.main`
                     left: 50%;
                     right: 50%;
                     transform: translate(-50%);
+                    z-index: 1;
                 }
 
             }

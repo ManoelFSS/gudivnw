@@ -14,6 +14,7 @@ export const Headers = styled.header`
     cursor: pointer;
     user-select: none;
     outline:none;
+    z-index: 10;
 
     h1{
         display: flex;
@@ -77,8 +78,8 @@ export const Nav = styled.nav`
         background-color: #ffffff;
         box-shadow: -1px 0px 15px #000000b3;
         border-radius: 20px 0px 0px 15px;
-        z-index: 1;
-        transition: all 0.4s 0.2s;
+        z-index: 99;
+        transition: all 0.4s ;
  
         ul{
             display: block;
@@ -91,9 +92,10 @@ export const Div = styled.div`
     display:none;
     height: 6vh;
     right: 20px;
+    top: 14px;;
     border-radius: 50%;
-    z-index: 2;
-    position: absolute;
+    z-index: 100;
+    position:fixed;
     user-select: none;
     outline:none;
 
