@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 
+
 export const Headers = styled.header`
     display: flex;
     justify-content: space-between;
@@ -54,6 +55,42 @@ export const Headers = styled.header`
         letter-spacing: 2px;
         border-radius: 20px;
     }
-
   
+`;
+
+export const Nav = styled.nav`
+    @media(max-width:930px){
+
+        display:flex ;
+        position: absolute;
+        justify-content: center;
+        width: 200px;
+        height: 100vh;
+        right: ${props=> props.menuBrirFecha};
+        top: 0px;
+        padding-top: 14vh;
+        background-color: #ffffff;
+        box-shadow: -1px 0px 15px #000000b3;
+        border-radius: 20px 0px 0px 15px;
+        z-index: 1;
+        transition: all 0.4s 0.2s;
+ 
+        ul{
+            display: block;
+        }
+    }
+`;
+
+export const Div = styled.div`
+    height: 5vh;
+    width: 5vh;
+    right: 10px;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
 `;
