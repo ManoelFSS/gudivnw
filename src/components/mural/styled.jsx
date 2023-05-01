@@ -25,6 +25,11 @@ export const ContennerMural = styled.section`
             color:#8B8B8B ;
             text-align: center;
         }
+        @media(max-width:488px){
+            h2{
+                font-size: clamp(2vw,4vw + 3vw,3.6em);
+            }
+        }
     }
 
     article {
@@ -41,7 +46,7 @@ export const ContennerMural = styled.section`
             align-items: center;
             justify-content: center;
             width: 32%;
-
+            transition: all 0.3s;
 
             img{
                 width: 100%;
@@ -74,7 +79,7 @@ export const ContennerMural = styled.section`
     section {
         display: flex;
         flex-wrap: wrap;
-        gap: 24px;
+        gap: 20px;
         padding: 50px 0px;
         width: 60%;
         justify-content: center;
@@ -101,18 +106,24 @@ export const Figure = styled.figure`
     text-align: center;
     background-color: ${props=> props.color};
     color: ${props=> props.textColor};
+    padding:0px 10px ;
+    transition: all 0.3s;
 
+    p{
+        width: 120px;
+    }
 
     
     img{
-            width: 40%;
-            height: 40%;
+            width: 45%;
+            height: 45%;
         }
 
-        @media(max-width:956px){
-            min-width:32%;
+        @media(max-width:1075px){
+            min-width:34.5%;
         }
 
+    
         @media(max-width:630px){
             min-width:46%;
         }
