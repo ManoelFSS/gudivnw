@@ -31,10 +31,10 @@ export default function Header(){
                     </li>
                 </ul>
             </Nav>
+            <Div onClick={()=> menuBrirFecha === '0px' ? ` ${setmenuImg(MenuFechado)}  ${setmenuBrirFecha('-210px')} ` :  ` ${setmenuImg(MenuAberto)}  ${setmenuBrirFecha('0px')} ` }>
+                <img src={menuImg} alt="icone menu" />
+            </Div>
         </Headers>
-        <Div onClick={()=> menuBrirFecha === '0px' ? ` ${setmenuImg(MenuFechado)}  ${setmenuBrirFecha('-210px')} ` :  ` ${setmenuImg(MenuAberto)}  ${setmenuBrirFecha('0px')} ` }>
-          <img src={menuImg} alt="icone menu" />
-        </Div>
        </>
     )
 }

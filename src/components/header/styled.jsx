@@ -92,10 +92,9 @@ export const Div = styled.div`
     display:none;
     height: 6vh;
     right: 20px;
-    top: 14px;;
     border-radius: 50%;
     z-index: 100;
-    position:fixed;
+    position:absolute;
     user-select: none;
     outline:none;
 

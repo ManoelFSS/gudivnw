@@ -4,13 +4,15 @@ import Climaperfeito from "../../assets/climaperfeito.png"
 import Ranchandovaber from "../../assets/ranchandovaber.png"
 import Caldas from "../../assets/caldas.png"
 import Conteinner_turistico from '../destinosturisticos/Conteinner_turistico';
+import Mural from '../mural/Mural'
+import {Container} from './styled'
 
 
 
 
 export default function Main(){
     return (
-        <container>
+        <Container>
            <Section 
                 color={'#fff'} 
                 backcolor={'linear-gradient(180deg, #005BD5, #002E6B)'} 
@@ -47,6 +49,7 @@ export default function Main(){
                 paragrafo={'Conheça as fontes termais de Caldas Novas, Goiás. Águas quentes, num clima sereno, relaxante e natural.'}
             />
             <Conteinner_turistico />
-        </container>
+            <Mural/>
+        </Container>
     )
 }
