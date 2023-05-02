@@ -44,13 +44,13 @@ export const SearchContainer = styled.section`
         padding: 10px 20px;
     }
 
-    @media(max-width:500px){
+    @media(max-width:590px){
         align-items: center;
         min-width:300px ;
       
     
         label{
-        font-size: clamp(2vw,4vw + 3vw,3em);
+        font-size: clamp(2.5vw,4vw + 5vw,3.7em);
         text-align: center;
       }
     }
@@ -58,6 +58,8 @@ export const SearchContainer = styled.section`
     @media(max-width:400px){
         label{
             line-height:35px;
+            font-size: clamp(3vw,6vw + 5vw,3em);
+            
       }
     }
 
