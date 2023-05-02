@@ -33,7 +33,7 @@ export const Section = styled.section`
         height: 200px;
         color: #005BD5;
         padding: 20px 50px;
-        border: solid 1px red;
+      
     
         ul{
             width: 100%;
