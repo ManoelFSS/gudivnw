@@ -13,7 +13,7 @@ export default function Header(){
 
     const handleScrollToPosition = () => {
         window.scrollTo({
-          top:4000, 
+          top:4800, 
           behavior: "smooth" 
         });
     };
