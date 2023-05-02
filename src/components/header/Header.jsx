@@ -9,6 +9,14 @@ export default function Header(){
     const [menuAtivo, setMenuAtivo] = useState('Agendar')
     const [menuBrirFecha, setmenuBrirFecha] = useState('-210px')
     const [menuImg, setmenuImg] = useState(MenuFechado)
+  
+
+    const handleScrollToPosition = () => {
+        window.scrollTo({
+          top:4000, 
+          behavior: "smooth" 
+        });
+    };
     
 
     return (
@@ -17,16 +25,16 @@ export default function Header(){
             <h1><img src={Logo} alt="logo tipo, gudi o bom da vida é viver !" /></h1>
             <Nav menuBrirFecha={menuBrirFecha}>
                 <ul>
-                    <li className={ menuAtivo === 'Sobre' ? 'ativo' : ''}  onClick={()=> `${setMenuAtivo('Sobre')}  ${setmenuBrirFecha('-210px')} ${setmenuImg(MenuFechado)} `}>
+                    <li className={ menuAtivo === 'Sobre' ? 'ativo' : ''}  onClick={()=> `  ${setMenuAtivo('Sobre')}  ${setmenuBrirFecha('-210px')} ${setmenuImg(MenuFechado)} `}>
                         Sobre
                     </li>
-                    <li className={ menuAtivo === 'Benefícios' ? 'ativo' : ''}  onClick={()=> `${setMenuAtivo('Benefícios')}  ${setmenuBrirFecha('-210px')} ${setmenuImg(MenuFechado)} `}>
+                    <li className={ menuAtivo === 'Benefícios' ? 'ativo' : ''}  onClick={()=> `  ${setMenuAtivo('Benefícios')}  ${setmenuBrirFecha('-210px')} ${setmenuImg(MenuFechado)} `}>
                         Benefícios
                     </li>
-                    <li className={ menuAtivo === 'Contato' ? 'ativo' : ''}  onClick={()=> `${setMenuAtivo('Contato')}  ${setmenuBrirFecha('-210px')} ${setmenuImg(MenuFechado)}`}>
+                    <li className={ menuAtivo === 'Contato' ? 'ativo' : ''}  onClick={()=> ` ${handleScrollToPosition()}   ${setMenuAtivo('Contato')}  ${setmenuBrirFecha('-210px')} ${setmenuImg(MenuFechado)}`}>
                         Contato
                     </li>
-                    <li className={ menuAtivo === 'Agendar' ? 'ativo' : ''}  onClick={()=> `${setMenuAtivo('Agendar')}  ${setmenuBrirFecha('-210px')} ${setmenuImg(MenuFechado)}`}>
+                    <li className={ menuAtivo === 'Agendar' ? 'ativo' : ''}  onClick={()=> `  ${setMenuAtivo('Agendar')}  ${setmenuBrirFecha('-210px')} ${setmenuImg(MenuFechado)}`}>
                         Agendar
                     </li>
                 </ul>

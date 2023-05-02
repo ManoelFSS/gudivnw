@@ -41,6 +41,10 @@ export const Section = styled.section`
               font-family:Argentum-Regular;
               font-size: clamp(1vw,1.4vw + 2vw,1em);
               line-height:20px;
+              cursor: pointer;
+              &:hover{
+                color: #00a2ff;
+              }
            }
         }
 
