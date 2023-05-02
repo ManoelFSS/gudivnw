@@ -30,7 +30,7 @@ export const Headers = styled.header`
     ul{
         display: flex;
         list-style: none;
-        gap: 10px;
+        gap: 40px;
         color:#005BD5;
         min-height: 8vh;
         align-items: center;
@@ -41,25 +41,27 @@ export const Headers = styled.header`
         display: flex;
         justify-content: center;
         align-items: center;
-      
-        width: 150px;
         height: 4.8vh;
         font-size: clamp(1vw,2vw + 2vw,1em);
         font-weight:bold;
         transition: all 0.3s;
         border-radius: 20px;
         font-family:Argentum-Regular;
-
+        padding: 20px ;
+        width: 140px;
+      
     }
 
     li:hover, .ativo {
+    
         background-color: #005BD5;
         color: #fff;
         border-radius: 15px;
         text-transform: uppercase;
-        letter-spacing: 1.5px;
+        letter-spacing: 1px;
         border-radius: 20px;
         font-family:Argentum;
+       
     }
     .ativo:hover {
         background-color: #337bda;

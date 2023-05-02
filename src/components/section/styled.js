@@ -67,7 +67,7 @@ export const Container_area = styled.main`
             div:nth-child(1){
                
                 h4{
-                     font-size: clamp(1vw,2vw + 2.7vw,3em);
+                     font-size: clamp(2vw,3vw + 5vw,3em);
                 }
 
                 button{
