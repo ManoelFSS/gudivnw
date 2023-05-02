@@ -47,7 +47,6 @@ export const Section = styled.section`
         textarea{
             width: 90%;
             border-radius: 20px;
-            height: 10vh;
             padding: 10px;
             border: none;
             margin-bottom: 20px;

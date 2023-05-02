@@ -41,13 +41,15 @@ export const Headers = styled.header`
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 15px 20px;
-        width: 160px;
-        height: 5vh;
+      
+        width: 150px;
+        height: 4.8vh;
         font-size: clamp(1vw,2vw + 2vw,1em);
         font-weight:bold;
         transition: all 0.3s;
         border-radius: 20px;
+        font-family:Argentum-Regular;
+
     }
 
     li:hover, .ativo {
@@ -55,8 +57,12 @@ export const Headers = styled.header`
         color: #fff;
         border-radius: 15px;
         text-transform: uppercase;
-        letter-spacing: 2px;
+        letter-spacing: 1.5px;
         border-radius: 20px;
+        font-family:Argentum;
+    }
+    .ativo:hover {
+        background-color: #337bda;
     }
 
     @media(max-width:975px){

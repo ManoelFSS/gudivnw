@@ -43,7 +43,7 @@ export const Container_area = styled.main`
         }
 
         
-        @media(max-width:680px){
+        @media(max-width:695px){
             
             div:nth-child(1){
                 h4{
